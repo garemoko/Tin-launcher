@@ -48,7 +48,7 @@ $(function(){
 		$('#basicPass0').val('x');
 		$('#actorAgentName1').val('Andrew Downes');
 		$('#actorAgentFunctionalIdentifier1').val('andrew@tincanapi.co.uk');
-		$('#launchURL').val('file:///D:/Data/Documents/My%20Adobe%20Captivate%20Projects/untitled1/index_TinCan.html');
+		$('#launchURL').val('');
 	}
 	
 });
