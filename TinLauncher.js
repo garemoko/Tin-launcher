@@ -83,16 +83,12 @@ function launchCaptivate()
 			 });
 		break;
 	}
-	
-
 	launchLink += '&actor=' + JSON.stringify(myActor);
-	launchLink += '&registration=' + $('registration').val();
-
+	if ($('#registration').val()){
+		launchLink += '&registration=' + $('#registration').val();
+	}
+	
 	window.open(launchLink);
-
-	
-	
-	
 	
 }
 
