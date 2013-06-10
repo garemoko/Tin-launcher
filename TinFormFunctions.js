@@ -336,17 +336,19 @@ function bubbleInputValuesUp(objectArray)
 
 function getActor(jQueryAgent,objectType)
 {
+	console.log(jQueryAgent.find('.functionalIdentifierType').val());
 	//default to agent
 	objectType = typeof objectType !== 'undefined' ? objectType : 'Agent';
 	var rtnActor;
 	var rtnActorFunctionalIdentifierType = jQueryAgent.find('.functionalIdentifierType').val();
 	
-	if ((objectType == 'Group') && (jQueryAgent.find('.functionalIdentifier').val() == ''))
+	if ((objectType == 'Group') && (rtnActorFunctionalIdentifierType == ''))
 	{
 		rtnActor= new TinCan[objectType];
 	}
 	else if (rtnActorFunctionalIdentifierType == 'account')
 	{
+		console.log('jQueryAgent')
 		var myAgentAccount = new TinCan.AgentAccount({
 			name:jQueryAgent.find('.accountName').val(),
 			homePage:jQueryAgent.find('.accountHomePage').val()
