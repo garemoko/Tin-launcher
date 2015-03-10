@@ -83,7 +83,7 @@ function launchCaptivate()
 			 });
 		break;
 	}
-	launchLink += '&actor=' + JSON.stringify(myActor);
+	launchLink += '&actor=' + JSON.stringify(myActor.asVersion('1.0.0'));
 	if ($('#registration').val()){
 		launchLink += '&registration=' + $('#registration').val();
 	}
