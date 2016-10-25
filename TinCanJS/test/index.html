@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!--
+    Copyright 2012 Rustici Software
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<html>
+<head>
+    <title>TinCanJS Tests</title>
+</head>
+<body>
+
+<div style="display: inline-block; *display: inline; vertical-align: top; width: 30%;">
+    <h2>Full Suite</h2>
+    <a href="complete.html">Complete Test</a>
+
+    <h2>Single Test Files</h2>
+    <ul>
+        <li><a href="single/TinCan.html">TinCan</a></li>
+        <li><a href="single/TinCan-async.html">TinCan Async</a></li>
+        <li><a href="single/TinCan-sync.html">TinCan Sync</a></li>
+        <li><a href="single/LRS.html">LRS</a></li>
+        <li><a href="single/LRS-browser.html">LRS (Browser Only)</a></li>
+        <li><a href="single/About.html">About</a></li>
+        <li><a href="single/State.html">State</a></li>
+        <li><a href="single/ActivityProfile.html">ActivityProfile</a></li>
+        <li><a href="single/AgentProfile.html">AgentProfile</a></li>
+        <li><a href="single/StatementsResult.html">StatementsResult</a></li>
+        <li><a href="single/Agent.html">Agent</a></li>
+        <li><a href="single/Group.html">Group</a></li>
+        <li><a href="single/AgentAccount.html">AgentAccount</a></li>
+        <li><a href="single/Activity.html">Activity</a></li>
+        <li><a href="single/ActivityDefinition.html">ActivityDefinition</a></li>
+        <li><a href="single/Context.html">Context</a></li>
+        <li><a href="single/ContextActivities.html">ContextActivities</a></li>
+        <li><a href="single/InteractionComponent.html">InteractionComponent</a></li>
+        <li><a href="single/Result.html">Result</a></li>
+        <li><a href="single/Score.html">Score</a></li>
+        <li><a href="single/Statement.html">Statement</a></li>
+        <li><a href="single/StatementRef.html">StatementRef</a></li>
+        <li><a href="single/SubStatement.html">SubStatement</a></li>
+        <li><a href="single/Verb.html">Verb</a></li>
+        <li><a href="single/Utils.html">Utils</a></li>
+        <li><a href="single/Attachment.html">Attachment</a></li>
+    </ul>
+
+    <h2>Special Conditions</h2>
+    <ul>
+        <li><a href="single/offline.html">Offline / CORS Server Denied</a></li>
+        <li><a href="single/manual-image.html">Manual - Image Roundtrip</a></li>
+    </ul>
+</div>
+<div style="display: inline-block; *display: inline; vertical-align: top;">
+    <h2>Configuration</h2>
+    <pre id="config"></pre>
+</div>
+
+<script>
+    if (typeof module === "undefined") {
+        module = {};
+    }
+</script>
+<script src="config.js"></script>
+<script>
+    var configEl = document.getElementById("config");
+    configEl.innerHTML = JSON.stringify(module.exports, null, 4);
+</script>
+
+</body>
+</html>
