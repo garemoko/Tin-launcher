@@ -1,0 +1,104 @@
+.input-group {
+  width:100%;
+  margin-bottom: 15px;
+}
+
+#submit-group {
+  text-align: right;
+}
+
+@media (min-width: 992px) {
+  .lead {
+    font-size: 28px;
+  }
+}
+
+@media (min-width: 1200px) {
+
+}
+
+body {
+  font-family: Roboto,Arial,sans-serif;
+  color:#222;
+}
+
+#watershed-w {
+  padding: 5px;
+}
+
+#watershed-w img{
+  height:40px;
+}
+
+.table-striped>tbody>tr:nth-of-type(odd) {
+    background-color: #e7f4ff;
+}
+
+.navbar-inverse {
+    background-color: #00ade7;
+    border-color: #00ade7;
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus {
+    background-color: #006691;
+}
+
+.panel-primary {
+    border-color: #deedfa;
+}
+
+.has-success .form-control {
+    border-color: #00ade7;
+}
+
+.has-success .input-group-addon {
+    color: #00ade7;
+    border-color: #00ade7;
+    background-color: #e7f4ff;
+}
+
+.has-error .form-control {
+    border-color: #e66665;
+}
+
+.has-error .input-group-addon {
+    color: #e66665;
+    border-color: #e66665;
+    background-color: #f4b7b5;
+}
+
+.btn-success {
+    background-color:  #00ade7;
+    border-color: #b4def6;
+}
+
+.btn-primary {
+    background-color: #007faf;
+    border-color: #006691;
+}
+
+.form-control {
+  color: #222;
+}
+
+.alert-warning {
+    background-color: #e7f4ff;
+    border-color: #555;
+    color: #555;
+}
+
+#track-progress h2 {
+  margin-bottom: 50px;
+}
+
+footer {
+  background-color: #f9f9f9;
+}
+
+footer h2 {
+  font-size: 14px;
+}
+
+footer p {
+  font-size: 12px;
+}
